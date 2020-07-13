@@ -1,0 +1,55 @@
+/*login page styling starts from here*/
+
+#form-section form input{
+	height: 45px;
+	border-radius: 0px !important;
+}
+#form-section input{
+	height: 45px;
+	border-radius: 0px !important;
+	width: 400px;
+}
+#form-section form {
+	width: 400px;
+	margin: auto;
+}
+
+#submit {
+	background-color:#37B62A !important;
+	border: 0px;
+	font-weight: bolder;
+}
+
+#form-section form .fa{
+	color: lightgray;
+}
+
+@media (max-width: 900px) {
+	#form-section form {
+	 width: 320px;
+	}
+	
+	#form-section input{
+	width: 320px;
+}
+}
+
+/*dashboard page styling starts from here*/
+
+#dashboard_page_header{
+	min-height: 120px;
+	background-color:#37B62A;
+}
+
+#dashboard_page_header h1{
+
+	color: white;
+	text-shadow: 1px 1px 5px black;
+}
+
+table a{
+	padding: 3px;
+}
+table a:hover{
+	text-decoration: none;
+}
