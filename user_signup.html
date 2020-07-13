@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Randmob | Signup Page</title>
+	<!--Fontawesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap--->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="header d-flex justify-content-center p-5">
+					<img src="images/logo.png" alt="Randmob Logo" id="logo"><h1 id="randmob">Randmob</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div id="signup">
+					<span class="float-right">Organization?<br><br>
+					<a href="organization_sign_up.html" class="font-weight-bolder btn-success shadow  px-2 py-2" id="submit" style="border-radius: 0px;"> Register</a>
+					</span>
+						
+						<h3 class="font-weight-bolder">Sign up</h3>
+						<p class="text-muted animated slideInLeft delay-1s" style="font-size:1em">(An organization reference key is needed to sign up)</p>
+						
+					<img src="images/signup.png" alt="Sign up Illustration" class="d-block mx-auto img-fluid animated shake delay-1s">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div id="signup-form" class="pt-3">
+					<form action="#" method="#" enctype="#">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" id="name" placeholder="Enter your Name" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="text" id="email" placeholder="Enter your email address" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" id="password" placeholder="Enter your password" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Re-type Password</label>
+						<input type="text" id="repassword" placeholder="Re-type your password" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label for="customer_phone">Customer's phone</label>
+						<input type="text" id="customer_phone" placeholder="Enter customer's phone" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label for="customer_phone">Location</label>
+						<input type="text" id="location" placeholder="Location" class="form-control" required>
+					</div>
+					<div class="ml-n2">
+						<button type="button" class="btn btn-success border-0 shadow-sm" data-toggle="modal" data-target="#carOwner" style="border-radius:0px">
+						  Car owner
+						</button>
+						&nbsp;&nbsp;
+						<button type="button" class="btn btn-success border-0 shadow-sm" data-toggle="modal" data-target="#nonCarOwner" style="border-radius:0px">
+						  Non car owner
+						</button>
+					</div>
+					<!---------------------Form hidden start part------------------------------>
+						<!-- Car owner Form starts here-->
+						<div class="modal" id="carOwner">
+						  <div class="modal-dialog">
+							<div class="modal-content">
+
+							  <!-- Modal Header -->
+							  <div class="modal-header">
+								<h4 class="modal-title">Car Owner</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							  </div>
+
+							  <!-- Modal body -->
+							  <div class="modal-body">
+										<div class="form-group">
+											<label for="tov">Type of vehicle</label>
+											<select class="form-control" id="tov">
+												<option value="Truck">Truck</option>
+												<option value="Bus">Bus</option>
+												<option value="Suv">SUV</option>
+												<option value="Salon">Salon</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="tof">Type of Fuel</label>
+											<select class="form-control" id="tof" >
+												<option value="diesel">Diesel</option>
+												<option value="petrol">Petrol</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="brand">Brand</label>
+											<input type="text" id="brand" placeholder="Enter the brand" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="model">Model</label>
+											<input type="text" id="Model" placeholder="Enter the Model" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="reg">Reg NO.</label>
+											<input type="text" id="reg" placeholder="Enter the Registration number" class="form-control">
+										</div>
+										<div class="text-center py-2">
+											<h3>Your best Mechanic</h3>
+											<p>Provide the details of your best mechanic</p>
+										</div>
+										<div class="form-group">
+											<label for="nameofmec">Name of mechanic</label>
+											<input type="text" id="nameofmec" placeholder="Enter the name of the Mechanic" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="phoneofmec">Phone number of mechanic</label>
+											<input type="text" id="phoneofmec" placeholder="The Phone number of the Mechanic" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="address">Address</label>
+											<input type="text" id="Address" placeholder="Enter your address" class="form-control">
+										</div>
+											<div class="form-group">
+												<label for="state">State</label>
+												<select name="state" id="state" class="form-control">
+												  <option value="" selected="selected">- Select -</option>
+												  <option value="Abuja FCT">Abuja FCT</option>
+												  <option value="Abia">Abia</option>
+												  <option value="Adamawa">Adamawa</option>
+												  <option value="Akwa Ibom">Akwa Ibom</option>
+												  <option value="Anambra">Anambra</option>
+												  <option value="Bauchi">Bauchi</option>
+												  <option value="Bayelsa">Bayelsa</option>
+												  <option value="Benue">Benue</option>
+												  <option value="Borno">Borno</option>
+												  <option value="Cross River">Cross River</option>
+												  <option value="Delta">Delta</option>
+												  <option value="Ebonyi">Ebonyi</option>
+												  <option value="Edo">Edo</option>
+												  <option value="Ekiti">Ekiti</option>
+												  <option value="Enugu">Enugu</option>
+												  <option value="Gombe">Gombe</option>
+												  <option value="Imo">Imo</option>
+												  <option value="Jigawa">Jigawa</option>
+												  <option value="Kaduna">Kaduna</option>
+												  <option value="Kano">Kano</option>
+												  <option value="Katsina">Katsina</option>
+												  <option value="Kebbi">Kebbi</option>
+												  <option value="Kogi">Kogi</option>
+												  <option value="Kwara">Kwara</option>
+												  <option value="Lagos">Lagos</option>
+												  <option value="Nassarawa">Nassarawa</option>
+												  <option value="Niger">Niger</option>
+												  <option value="Ogun">Ogun</option>
+												  <option value="Ondo">Ondo</option>
+												  <option value="Osun">Osun</option>
+												  <option value="Oyo">Oyo</option>
+												  <option value="Plateau">Plateau</option>
+												  <option value="Rivers">Rivers</option>
+												  <option value="Sokoto">Sokoto</option>
+												  <option value="Taraba">Taraba</option>
+												  <option value="Yobe">Yobe</option>
+												  <option value="Zamfara">Zamfara</option>
+										 <option value="Outside Nigeria">Outside Nigeria</option>
+									</select>
+									</div>
+								   <div class="form-group">
+										<label for="imgov"><i class="fa fa-camera fa-3x"></i> &nbsp;Image of the Vehicle </label>
+										<input type="file" id="imgov" name="imov" class="form-control-file" accept="image/*" capture="user">
+									</div>
+								    <div class="form-group">
+										<label for="poo"><i class="fa fa-camera fa-3x"></i> &nbsp;Proof of Ownership </label>
+										<input type="file" id="poo" name="poo" class="form-control-file" accept="image/*" capture="user">
+									</div>
+									<div class="form-group">
+										<label for="ork">Organization Key</label>
+										<input type="text" id="ork" placeholder="Enter Organization key" class="form-control" required>
+									</div>
+									<div class="form-group">
+										<label for="ork">Referral Codes</label>
+										<input type="text" id="rc" placeholder="Enter referral Code" class="form-control" required>
+									</div>
+							  </div>
+
+							  <!-- Modal footer -->
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+							  </div>
+
+							</div>
+						  </div>
+						</div>
+					  <!-- Car owner Form ends here-->
+						
+					  <!-- Car owner Form starts here-->
+						<div class="modal" id="nonCarOwner">
+						  <div class="modal-dialog">
+							<div class="modal-content">
+
+							  <!-- Modal Header -->
+							  <div class="modal-header">
+								<h4 class="modal-title">Non car Owner</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							  </div>
+
+							  <!-- Modal body -->
+							  <div class="modal-body">
+									<div class="form-group">
+										<label for="ork">Organization Key</label>
+										<input type="text" id="ork" placeholder="Enter Organization key" class="form-control" required>
+									</div>
+									<div class="form-group">
+										<label for="ork">Referral Codes</label>
+										<input type="text" id="rc" placeholder="Enter referral Code" class="form-control" required>
+									</div>
+							  </div>
+
+							  <!-- Modal footer -->
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+							  </div>
+
+							</div>
+						  </div>
+						</div>
+					  <!-- Car owner Form ends here-->
+
+					<!---------------------Form hidden ends part------------------------------>
+					
+					<div class="form-group">
+						<br>
+						<!-- Button trigger modal -->
+						<button type="submit" class="form-control btn-success p-2 shadow border-0 tts font-weight-bolder" data-toggle="modal" data-target="#exampleModal" id="submit">
+						   Register
+						</button>
+					</div>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+		<!------------------------Referal form starts here----------------->
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Refer others</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+					 <form action="#" method="" enctype="#" id="contact-form">
+						 <div class="form-group">
+							 <label for="rname1"><i class="fa fa-user-circle">&nbsp;</i>Name</label>
+							 <input type="text" name="rname1" class="form-control" id="rname1" placeholder="Enter name">
+						 </div>
+						 <div class="form-group">
+							 <label for="rphone1"><i class="fa fa-phone-square">&nbsp;</i>Phone</label>
+							 <input type="text" name="rphone1" class="form-control" id="rphone1" placeholder="Phone number">
+						 </div>
+						 <div class="form-group">
+							 <label for="message"><i class="fa fa-user">&nbsp;</i>User type</label>
+							 <select class="form-control">
+								 <option>Individual</option>
+								  <option>Organization</option>
+							 </select>
+							
+						 </div>
+						 <div class="form-group">
+							 <input type="submit" name="contact-submit" class="form-control" id="submit">
+						 </div>
+					 </form>
+				  </div>
+				</div>
+			  </div>
+			</div>
+	  <!------------------------Referer form ends here------------------->
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+	<script src="js/mainscript.js"></script>
+  </body>
+</html>

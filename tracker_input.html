@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Randmob | Covid Tracker</title>
+	<!--Fontawesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap--->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainstyle.css">
+  </head>
+  <body>
+	 <!---------Covid Header page Starts Here------------->
+	  <div id="coming_soon_page_header">
+		  <div class="row">
+			  <div class="col-12">
+				<div class="container p-3">
+					<h1 id="randmob"><img src="images/logo.png" id="logo"><span class="text-success pl-3 pt-1">Randmob</span></h1>
+					<hr>
+				</div>
+			  </div>
+		  </div>
+	  </div>	
+	  <!---------Covid Header page Ends Here---------------->
+
+	  <!---------Covid  page contents Starts Here------------->
+	  
+	  <div class="row">
+		  <div class="col-12">
+			  <div class="container p-3">
+					<div class="shadow p-2">
+						<h3>Tracker Input</h3>
+				    </div>
+				    <div id="search-area">
+						<form action="#">
+							<div class="form-group">
+								<label for="search"><i class="fa fa-search fa-2x"></i>&nbsp;&nbsp;Search for user</label>
+								<input type="text" name="search" id="search" class="form-control w-75" placeholder="080888888888">
+							</div>
+							<div class="form-group">
+								<input type="submit" name="submit" id="submit" class="form-control w-25" value="Search">
+							</div>
+						</form>
+				    </div>
+				</div>	  
+		  </div>
+	  </div>
+	  
+
+	  <div class="row">
+	  	 <div class="col-12">
+			 <div class="container" id="covid-form-section">
+				  <div class="bg-light">
+					  <h4 class="pl-1">Enter details</h4>
+				  	  <p class="pl-1">User and Family members</p>
+				  </div>
+				  <form action="">
+					  <div class="form-group p-2" id="search_resurt">
+						<div class="form-check">
+						  <span class="p-3">
+							  <input class="form-check-input" type="radio" name="family[]">
+							  <label class="form-check-label" for="gridCheck">
+								Victor
+							  </label>
+						  </span>
+						  <span class="p-3">
+							  <input class="form-check-input" type="radio" name="family[]">
+							  <label class="form-check-label" for="gridCheck">
+								Mimz
+							  </label>
+						  </span>
+						  <span class="p-3">
+							  <input class="form-check-input" type="radio" name="family[]">
+							  <label class="form-check-label" for="gridCheck">
+								Lozy
+							  </label>
+						  </span>
+						  <span class="p-3">
+							  <input class="form-check-input" type="radio" name="family[]">
+							  <label class="form-check-label" for="gridCheck">
+								Leyo
+							  </label>
+						  </span>
+						  <span class="p-3">
+							  <input class="form-check-input" type="radio" name="family[]">
+							  <label class="form-check-label" for="gridCheck">
+								Elvis
+							  </label>
+						  </span>
+						</div>
+					  </div>
+					  <div class="form-group">
+						  <label for="temprature"><i class="fa fa-thermometer-full fa-2x">
+						  &nbsp;</i>Temprature <sup>0</sup>C</label>
+						  <input type="text" name="" id="temprature" class="form-control">
+					  </div>
+					  <div class="form-group p-3">
+						  <div class="form-check">
+							  <input type="checkbox" class="form-check-input" name="fever" id="fever">
+							  <label for="fever">Fever</label>
+						  </div>
+						  <div class="form-check">
+							  <input type="checkbox" class="form-check-input" name="headache" id="headache">
+							  <label for="headache">Headache</label>
+						  </div>
+						  <div class="form-check">
+							  <input type="checkbox" class="form-check-input" name="bd" id="bd">
+							  <label for="bd">Breathing Difficulty</label>
+						  </div>
+						  <div class="form-check">
+							  <input type="checkbox" class="form-check-input" name="dc" id="dc">
+							  <label for="dc">Dry Cough</label>
+						  </div>
+						  <div class="form-check">
+							  <input type="checkbox" class="form-check-input" name="pe" id="pe">
+							  <label for="pe">Pink eye</label>
+						  </div>
+						  <div class="form-check">
+							  <input type="checkbox" class="form-check-input" name="de" id="de">
+							  <label for="de">Digestive issues</label>
+						  </div>
+						   <div class="form-check">
+							  <input type="checkbox" class="form-check-input" name="lots" id="lots">
+							  <label for="lots">Loss of Taste and Smell</label>
+						  </div>
+						   <div class="form-check">
+							  <input type="checkbox" class="form-check-input" name="st" id="st">
+							  <label for="st">Sore Throat</label>
+						  </div>
+						   <div class="form-check">
+							  <input type="checkbox" class="form-check-input" name="cp" id="cp">
+							  <label for="dc">Chest Pain</label>
+						  </div>
+						  
+					  </div>
+					  <div class="form-group">
+						  <input type="submit" value="Submit" id="submit" class="form-control w-25 font-weight-bolder">
+					  </div>
+				  </form>
+			 </div>
+		 </div>
+	  </div>
+	  
+	
+	  <!---------Covid page contents Ends Here-------------->
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>

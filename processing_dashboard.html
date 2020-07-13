@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		table a{
+				padding: 3px;
+			}
+			table a:hover{
+				text-decoration: none;
+			}
+
+	</style>
+    <title>Randmob | Processing Dashboard</title>
+	<!--Fontawesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap--->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainstyle.css">
+  </head>
+  <body>
+	  <div class="container">
+		  <!----Header Starts Here-------->
+		  <div class="row">
+			  <div class="col-12 pt-3">
+				  <h1 class="text-success d-inline" id="randmob">
+					  <img src="images/logo.png" id="logo"> Randmob
+				  </h1>
+				  <img src="images/signup.png" class="float-right w-25">
+				  <div class="clearfix"></div>
+			  </div>
+		  </div>
+		  <!----Header Ends Here---------->
+		  
+		  <div class="row" id="admin-nav">
+			  <div class="col-12">
+				  <h3 class="font-weight-bold mt-n5 mb-5 p-2 shadow ">
+					  <a href="field_agent_dashboard.html" class="shadow-sm p-1 border">
+						  <i class="fa fa-arrow-left "></i>&nbsp;Back
+					  </a>
+					   &nbsp;Processing
+				  </h3>
+			  </div>
+		  </div>
+		  
+		  <!------Navigation tab Starts here---->
+			<nav>
+			  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Processing</a>
+			  </div>
+			</nav>
+			<div class="tab-content" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				  <div class="row mt-2">
+				<div class="col-12">
+					<div class="container mt-4" id="form-section"> 
+						<!----------Table from database goes here------------------>
+						<table class="table table-bordered table-striped">
+
+							
+						</table>
+						<!----------Table from database Ends here------------------>		  
+					</div>
+
+
+				</div>
+			</div>
+			  </div>
+			</div>
+		  <!------Navigation tab Ends here------>
+	  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>
