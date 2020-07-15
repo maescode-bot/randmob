@@ -740,6 +740,7 @@ form label {
 
 #randmob {
 	font-size: 2em;
+	font-family:"DoHyeon"; 
 }
 
 
@@ -807,5 +808,8 @@ form label {
 #cns, #css{
 	right: 60% !important;
 }
+@font-face{
+	font-family: "DoHyeon";
+	src:url("../font/Do_Hyeon/DoHyeon-Regular.ttf");
+}
 
-#car_owner
