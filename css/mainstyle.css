@@ -119,6 +119,16 @@ body{
     color: white;
     
 }
+.subscribe{
+    padding:10px 25px 10px 25px;
+    border-radius: 20px;
+    color: white;   
+}
+
+.subscribe:hover {
+	text-decoration: none !important;
+	color: white !important;
+}
 
 .section-1{
     background-color: rgb(250, 250, 250);
