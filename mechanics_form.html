@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		table a{
+				padding: 3px;
+			}
+			table a:hover{
+				text-decoration: none;
+			}
+
+	</style>
+    <title>Randmob | Field Agent Dashboard</title>
+	<!--Fontawesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap--->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainstyle.css">
+  </head>
+  <body>
+	  <div class="container">
+		  <!----Header Starts Here-------->
+		  <div class="row">
+			  <div class="col-12 pt-3">
+				  <h1 class="text-success d-inline" id="randmob">
+					  <img src="images/logo.png" id="logo"> Randmob
+				  </h1>
+				  <img src="images/signup.png" class="float-right w-25">
+				  <div class="clearfix"></div>
+			  </div>
+		  </div>
+		  <!----Header Ends Here---------->
+		  
+		  <div class="row" id="admin-nav">
+			  <div class="col-12">
+				  <h3 class="font-weight-bold mt-n5 mb-5 p-2 pl-3 shadow">Mechanics</h3>
+			  </div>
+		  </div>
+		  
+		  <!------Navigation tab Starts here---->
+			<nav>
+			  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Mechanics form</a>
+			  </div>
+			</nav>
+			<div class="tab-content" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				  <div class="row mt-2">
+				<div class="col-12">
+					<div class="container mt-4" id="form-section"> 
+						  <form action="#" method="post" enctype="multipart/form-data" class="pl-3 ">
+							  
+							  <div class="form-group">
+								 <label class="ml-n4">Mechanic type: </label><br>
+								 <input type="radio" class="form-check-input" name="mech_type" value="Japanese">
+								 <label for="japanese" class="form-check-inline">Japanese</label>
+								  &nbsp;&nbsp;
+								  
+								 <input type="radio" class="form-check-input" name="mech_type" value="American">
+								 <label for="American" class="form-check-inline">American</label>
+								  
+								  &nbsp;&nbsp;
+								  <input type="radio" class="form-check-input" name="mech_type" value="German">
+								 <label for="German" class="form-check-inline">German</label>
+								 
+								  &nbsp;&nbsp;
+								  <input type="radio" class="form-check-input" name="mech_type" value="General">
+								 <label for="General" class="form-check-inline">General</label>
+							  </div>
+							  
+							  <div class="form-group">
+								   <label class="ml-n4">Brand: </label><br>
+										<label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="Toyota"> Toyota
+										</label>
+								   
+							       
+										<label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="peugeout"> Peugeout
+										</label>
+								        
+								       <label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="BMW">BMW
+									   </label>
+								       
+								  		<label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="Nissan">
+										  Nissans
+								  		</label>
+								        
+								  		<label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="Ford">
+										  Ford
+								  		</label>
+								        
+								        <label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="mercedes">
+										  Mercedes
+								  		</label>
+								  		<label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="teslas">
+										  Tesla
+								  		</label>
+							  </div>  
+							  <div class="form-group">
+								   <label class="ml-n4">Speciality </label><br>
+										
+								        
+								        <label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="general">
+										  General
+								  		</label>
+								   
+								  		<label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="engine">
+										  Engine
+								  		</label>
+								   
+								        <label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="bodywork">
+										  Bodywork
+								  		</label>
+								   
+								   		<label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="electrical">
+										  Electrical
+								  		</label>
+								   		
+								   		<label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="gear">
+										  Gear
+								  		</label>
+								   
+								   		<label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="interior">
+										  Interior
+								  		</label>
+								   
+							  </div>  
+							  <div class="form-group">
+								   <label class="ml-n4">Category: </label><br>
+										
+								        
+								        <label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="sedan">
+										  sedan
+								  		</label>
+								   
+								  		<label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="suv">
+										  SUV
+								  		</label>
+								   
+								        <label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="Bus">
+										  Bus
+								  		</label>
+								   
+								   		<label class="form-check-label mr-4">
+										  <input class="form-check-input" type="checkbox" name="trucks">
+										  Trucks
+								  		</label>
+								   
+							  </div>
+							  <div class="form-group ml-n4 w-50">
+								  <input type="text" name="mobcode" class="form-control" placeholder="Enter mobcode">
+							  </div>
+							  <div class="form-group ml-n4 w-50">
+								  <input type="submit" name="activate" class="form-control btn-success" value="Activate" id="submit">
+							  </div>
+						  </form>
+					</div>
+
+
+				</div>
+			</div>
+			  </div>
+			</div>
+		  <!------Navigation tab Ends here------>
+	  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $("#myInput").on("keyup", function() {
+			var value = $(this).val().toLowerCase();
+			$("#myTable tr").filter(function() {
+			  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			});
+		  });
+		});
+</script>
+<script src="js/field_agent.js"></script>
+  </body>
+</html>
