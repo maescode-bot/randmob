@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		table a{
+				padding: 3px;
+			}
+			table a:hover{
+				text-decoration: none;
+			}
+
+	</style>
+    <title>Randmob | Repair Cost</title>
+	<!--Fontawesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap--->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainstyle.css">
+  </head>
+  <body>
+	  <div class="container">
+		  <!----Header Starts Here-------->
+		  <div class="row">
+			  <div class="col-12 pt-3">
+				  <h1 class="text-success d-inline" id="randmob">
+					  <img src="images/logo.png" id="logo"> Randmob
+				  </h1>
+				  <img src="images/signup.png" class="float-right w-25">
+				  <div class="clearfix"></div>
+			  </div>
+		  </div>
+		  <!----Header Ends Here---------->
+		  
+		  <div class="row" id="admin-nav">
+			  <div class="col-12">
+				  <h3 class="font-weight-bold mt-n5 mb-5 p-2 pl-3 shadow">Mechanics</h3>
+			  </div>
+		  </div>
+		  
+		  <!------Navigation tab Starts here---->
+			<nav>
+			  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Repair cost</a>
+			  </div>
+			</nav>
+			<div class="tab-content" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				  <div class="row mt-2">
+				<div class="col-12">
+					<div class="">
+						<p class="mt-4 text-center">
+                    		<a href="user_signup.htm" class="bg-success py-1 text-white d-block w-25" data-toggle="modal" data-target="#exampleModal">
+								Add
+							</a>
+						</p>
+						<p class="mt-4 text-center">
+							<a href="user_signup.htm" class="bg-success py-1 text-white d-block w-25" data-toggle="modal" data-target="#pay">Pay</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			  </div>
+			</div>
+		  <!------Navigation tab Ends here------>
+	  </div>
+	   <!------------------------Contact us form starts here----------------->
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Repair Cost</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+					 <form action="#" method="" enctype="#" id="contact-form">
+						 <div class="form-group">
+							 <label for="name">Part</label>
+							 <input type="text" name="name" class="form-control" id="part" placeholder="Please enter part name">
+						 </div>
+						 <div class="form-group">
+							 <label for="unit">Unit price</label>
+							 <input type="text" name="unit_price" class="form-control" id="unit_price" placeholder="Unit Price">
+						 </div>
+						 <div class="form-group">
+							 <label for="quatity">Quantity</label>
+							 <input type="text" name="quantity" class="form-control" id="quantity" placeholder="Enter the quantity">
+						 </div>
+						 <div class="form-group">
+							 <label for="total_price">Total</label>
+							 <input type="text" name="quantity" class="form-control" id="total_price" placeholder="">
+						 </div>
+						 <div class="form-group">
+							 <input type="submit" name="contact-submit" class="form-control btn-success" id="submit" value="Add Cost">
+						 </div>
+					 </form>
+				  </div>
+				</div>
+			  </div>
+			</div>
+	   <!------------------------Contact us form ends here------------------->
+	  <!------------------------Contact us form starts here----------------->
+			<!-- Modal -->
+			<div class="modal fade" id="pay" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Pay</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+					    <div class="w-50 shadow-sm m-2 mx-auto">
+							<p class="text-center py-2">
+								Pay with cash &nbsp;&nbsp;<i class="fa fa-money"></i>
+							</p>
+					    </div>
+					    <div class="w-50 shadow-sm m-2 mx-auto">
+							<p class="text-center py-2">
+								Pay with card &nbsp;&nbsp;<i class="fa fa-id-card"></i>
+							</p>
+					    </div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+	   <!------------------------Contact us form ends here------------------->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $("#myInput").on("keyup", function() {
+			var value = $(this).val().toLowerCase();
+			$("#myTable tr").filter(function() {
+			  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			});
+		  });
+		});
+</script>
+<script src="js/field_agent.js"></script>
+  </body>
+</html>
