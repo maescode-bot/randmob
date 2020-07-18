@@ -48,9 +48,8 @@
 			</nav>
 			<div class="tab-content" id="nav-tabContent">
 			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-				  <div class="row mt-2">
+			<div class="row mt-2">
 				<div class="col-12">
-					<div class="">
 						<p class="mt-4 text-center">
                     		<a href="user_signup.htm" class="bg-success py-1 text-white d-block w-25" data-toggle="modal" data-target="#exampleModal">
 								Add
@@ -59,7 +58,6 @@
 						<p class="mt-4 text-center">
 							<a href="user_signup.htm" class="bg-success py-1 text-white d-block w-25" data-toggle="modal" data-target="#pay">Pay</a>
 						</p>
-					</div>
 				</div>
 			</div>
 			  </div>
@@ -79,21 +77,22 @@
 				  </div>
 				  <div class="modal-body">
 					 <form action="#" method="" enctype="#" id="contact-form">
+						 <span id="error_message" class="text-center text-danger"></span>
 						 <div class="form-group">
 							 <label for="name">Part</label>
 							 <input type="text" name="name" class="form-control" id="part" placeholder="Please enter part name">
 						 </div>
 						 <div class="form-group">
 							 <label for="unit">Unit price</label>
-							 <input type="text" name="unit_price" class="form-control" id="unit_price" placeholder="Unit Price">
+							 <input type="text" name="unit_price" class="form-control" id="unit_price" placeholder="Unit Price" oninput="getValue()">
 						 </div>
 						 <div class="form-group">
 							 <label for="quatity">Quantity</label>
-							 <input type="text" name="quantity" class="form-control" id="quantity" placeholder="Enter the quantity">
+							 <input type="text" name="quantity" class="form-control" id="quantity" placeholder="Enter the quantity"  oninput="getValue()">
 						 </div>
 						 <div class="form-group">
 							 <label for="total_price">Total</label>
-							 <input type="text" name="quantity" class="form-control" id="total_price" placeholder="">
+							 <input type="text" name="quantity" class="form-control" id="total_price" readonly>
 						 </div>
 						 <div class="form-group">
 							 <input type="submit" name="contact-submit" class="form-control btn-success" id="submit" value="Add Cost">
@@ -148,6 +147,6 @@
 		  });
 		});
 </script>
-<script src="js/field_agent.js"></script>
+<script src="js/repair_costs.js"></script>
   </body>
 </html>
