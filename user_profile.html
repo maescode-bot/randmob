@@ -81,28 +81,141 @@
 							<td class="font-weight-bolder">Subscription</td><td><span class="badge-danger p-2 shadow-sm">No Active Subscription</span></td>
 						</tr>
 					</table>
-					<div class="pl-3">
-						<form action="#">
-						<div class="form-group">
-							<i class="fa fa-automobile fa-2x"></i>
-							<label for="vehicle_image">Vehicle Image</label>
-							<input type="file" name="vehicle_image" class="form-control-file">
-						</div>
-						<div class="form-group">
-							<i class="fa fa-newspaper-o fa-2x"></i>
-							<label for="vehicle_image">Prof of Ownership</label>
-							<input type="file" name="vehicle_image" class="form-control-file">
-						</div>
-						<div class="form-group">
-							<br>
-							<input type="submit" id="submit" name="vehicle_image" class="form-control w-25" value="upload">
-						</div>
-					</form>
+					<div class="pl-3 mb-2">
+						<button type="button" class="btn btn-success border-0 shadow-sm" data-toggle="modal" data-target="#carOwner" style="border-radius:0px">
+						  Add more cars
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>	
 	  </div>
+	  <!-- Car owner Form starts here-->
+						<div class="modal" id="carOwner">
+						  <div class="modal-dialog">
+							<div class="modal-content">
+
+							  <!-- Modal Header -->
+							  <div class="modal-header">
+								<h4 class="modal-title">Add more cars</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							  </div>
+
+							  <!-- Modal body -->
+							  <div class="modal-body">
+										<div class="form-group">
+											<label for="tov">Type of vehicle</label>
+											<select class="form-control" id="tov">
+												<option value="Truck">Truck</option>
+												<option value="Bus">Bus</option>
+												<option value="Suv">SUV</option>
+												<option value="Salon">Salon</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="tof">Type of Fuel</label>
+											<select class="form-control" id="tof" >
+												<option value="diesel">Diesel</option>
+												<option value="petrol">Petrol</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="brand">Brand</label>
+											<input type="text" id="brand" placeholder="Enter the brand" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="model">Model</label>
+											<input type="text" id="Model" placeholder="Enter the Model" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="reg">Reg NO.</label>
+											<input type="text" id="reg" placeholder="Enter the Registration number" class="form-control">
+										</div>
+										<div class="text-center py-2">
+											<h3>Your best Mechanic</h3>
+											<p>Provide the details of your best mechanic</p>
+										</div>
+										<div class="form-group">
+											<label for="nameofmec">Name of mechanic</label>
+											<input type="text" id="nameofmec" placeholder="Enter the name of the Mechanic" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="phoneofmec">Phone number of mechanic</label>
+											<input type="text" id="phoneofmec" placeholder="The Phone number of the Mechanic" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="address">Address</label>
+											<input type="text" id="Address" placeholder="Enter your address" class="form-control">
+										</div>
+											<div class="form-group">
+												<label for="state">State</label>
+												<select name="state" id="state" class="form-control">
+												  <option value="" selected="selected">- Select -</option>
+												  <option value="Abuja FCT">Abuja FCT</option>
+												  <option value="Abia">Abia</option>
+												  <option value="Adamawa">Adamawa</option>
+												  <option value="Akwa Ibom">Akwa Ibom</option>
+												  <option value="Anambra">Anambra</option>
+												  <option value="Bauchi">Bauchi</option>
+												  <option value="Bayelsa">Bayelsa</option>
+												  <option value="Benue">Benue</option>
+												  <option value="Borno">Borno</option>
+												  <option value="Cross River">Cross River</option>
+												  <option value="Delta">Delta</option>
+												  <option value="Ebonyi">Ebonyi</option>
+												  <option value="Edo">Edo</option>
+												  <option value="Ekiti">Ekiti</option>
+												  <option value="Enugu">Enugu</option>
+												  <option value="Gombe">Gombe</option>
+												  <option value="Imo">Imo</option>
+												  <option value="Jigawa">Jigawa</option>
+												  <option value="Kaduna">Kaduna</option>
+												  <option value="Kano">Kano</option>
+												  <option value="Katsina">Katsina</option>
+												  <option value="Kebbi">Kebbi</option>
+												  <option value="Kogi">Kogi</option>
+												  <option value="Kwara">Kwara</option>
+												  <option value="Lagos">Lagos</option>
+												  <option value="Nassarawa">Nassarawa</option>
+												  <option value="Niger">Niger</option>
+												  <option value="Ogun">Ogun</option>
+												  <option value="Ondo">Ondo</option>
+												  <option value="Osun">Osun</option>
+												  <option value="Oyo">Oyo</option>
+												  <option value="Plateau">Plateau</option>
+												  <option value="Rivers">Rivers</option>
+												  <option value="Sokoto">Sokoto</option>
+												  <option value="Taraba">Taraba</option>
+												  <option value="Yobe">Yobe</option>
+												  <option value="Zamfara">Zamfara</option>
+										 <option value="Outside Nigeria">Outside Nigeria</option>
+									</select>
+									</div>
+								   <div class="form-group">
+										<label for="imgov"><i class="fa fa-camera fa-3x"></i> &nbsp;Image of the Vehicle </label>
+										<input type="file" id="imgov" name="imov" class="form-control-file" accept="image/*" capture="user">
+									</div>
+								    <div class="form-group">
+										<label for="poo"><i class="fa fa-camera fa-3x"></i> &nbsp;Proof of Ownership </label>
+										<input type="file" id="poo" name="poo" class="form-control-file" accept="image/*" capture="user">
+									</div>
+									<div class="form-group">
+										<label for="mobkey">MOBKEY</label>
+										<input type="text" id="mobkey" placeholder="Enter MOBKEY" class="form-control" required>
+									</div>
+
+							  </div>
+
+							  <!-- Modal footer -->
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-success" data-dismiss="modal">Add Car</button>
+							  </div>
+
+							</div>
+						  </div>
+						</div>
+					  <!-- Car owner Form ends here-->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
