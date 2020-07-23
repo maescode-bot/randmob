@@ -80,8 +80,29 @@
 						<input type="text" id="customer_phone" placeholder="Enter customer's phone" class="form-control" required>
 					</div>
 					<div class="form-group">
-						<label for="customer_phone">Location</label>
-						<input type="text" id="location" placeholder="Location" class="form-control" required>
+						<label for="country">Country</label>
+						<select name="country" class="countries form-control" id="countryId">
+							<option value="">Select Country</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="state">State</label>
+						<select name="state" class="states form-control" id="stateId">
+							<option value="">Select State</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="city">City</label>
+						<select name="city" class="cities form-control" id="cityId">
+							<option value="">Select City</option>
+						</select>
+					</div>
+						<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+						<script src="//geodata.solutions/includes/countrystatecity.js"></script>
+
+					<div class="form-group">
+						<label for="customer_phone">Address</label>
+						<input type="text" id="location" placeholder="Address" class="form-control" required>
 					</div>
 					<div class="ml-n2">
 						<button type="button" class="btn btn-success border-0 shadow-sm" data-toggle="modal" data-target="#carOwner" style="border-radius:0px">
@@ -146,58 +167,35 @@
 											<label for="phoneofmec">Phone number of mechanic</label>
 											<input type="text" id="phoneofmec" placeholder="The Phone number of the Mechanic" class="form-control">
 										</div>
-										<div class="form-group">
+								        <div class="form-group">
+											<label for="country">Country</label>
+											<select name="country" class="countries form-control" id="countryId">
+												<option value="">Select Country</option>
+											</select>
+										</div>
+								  		<div class="form-group">
+											<label for="state">State</label>
+											<select name="state" class="states form-control" id="stateId">
+												<option value="">Select State</option>
+											</select>
+								  		</div>
+								        <div class="form-group">
+											<label for="city">City</label>
+											<select name="city" class="cities form-control" id="cityId">
+												<option value="">Select City</option>
+											</select>
+										</div>
+											<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+											<script src="//geodata.solutions/includes/countrystatecity.js"></script>
+								  		
+									    <div class="form-group">
 											<label for="address">Address</label>
 											<input type="text" id="Address" placeholder="Enter your address" class="form-control">
 										</div>
-											<div class="form-group">
-												<label for="state">State</label>
-												<select name="state" id="state" class="form-control">
-												  <option value="" selected="selected">- Select -</option>
-												  <option value="Abuja FCT">Abuja FCT</option>
-												  <option value="Abia">Abia</option>
-												  <option value="Adamawa">Adamawa</option>
-												  <option value="Akwa Ibom">Akwa Ibom</option>
-												  <option value="Anambra">Anambra</option>
-												  <option value="Bauchi">Bauchi</option>
-												  <option value="Bayelsa">Bayelsa</option>
-												  <option value="Benue">Benue</option>
-												  <option value="Borno">Borno</option>
-												  <option value="Cross River">Cross River</option>
-												  <option value="Delta">Delta</option>
-												  <option value="Ebonyi">Ebonyi</option>
-												  <option value="Edo">Edo</option>
-												  <option value="Ekiti">Ekiti</option>
-												  <option value="Enugu">Enugu</option>
-												  <option value="Gombe">Gombe</option>
-												  <option value="Imo">Imo</option>
-												  <option value="Jigawa">Jigawa</option>
-												  <option value="Kaduna">Kaduna</option>
-												  <option value="Kano">Kano</option>
-												  <option value="Katsina">Katsina</option>
-												  <option value="Kebbi">Kebbi</option>
-												  <option value="Kogi">Kogi</option>
-												  <option value="Kwara">Kwara</option>
-												  <option value="Lagos">Lagos</option>
-												  <option value="Nassarawa">Nassarawa</option>
-												  <option value="Niger">Niger</option>
-												  <option value="Ogun">Ogun</option>
-												  <option value="Ondo">Ondo</option>
-												  <option value="Osun">Osun</option>
-												  <option value="Oyo">Oyo</option>
-												  <option value="Plateau">Plateau</option>
-												  <option value="Rivers">Rivers</option>
-												  <option value="Sokoto">Sokoto</option>
-												  <option value="Taraba">Taraba</option>
-												  <option value="Yobe">Yobe</option>
-												  <option value="Zamfara">Zamfara</option>
-										 <option value="Outside Nigeria">Outside Nigeria</option>
-									</select>
-									</div>
-								   <div class="form-group">
-										<label for="imgov"><i class="fa fa-camera fa-3x"></i> &nbsp;Image of the Vehicle </label>
-										<input type="file" id="imgov" name="imov" class="form-control-file" accept="image/*" capture="user">
-									</div>
+									   <div class="form-group">
+											<label for="imgov"><i class="fa fa-camera fa-3x"></i> &nbsp;Image of the Vehicle </label>
+											<input type="file" id="imgov" name="imov" class="form-control-file" accept="image/*" capture="user">
+										</div>
 								    <div class="form-group">
 										<label for="poo"><i class="fa fa-camera fa-3x"></i> &nbsp;Proof of Ownership </label>
 										<input type="file" id="poo" name="poo" class="form-control-file" accept="image/*" capture="user">
@@ -306,12 +304,12 @@
 						  
 						<a href="https://twitter.com/intent/tweet/?text=I just signed up for car repairs on %20https%3A%2F%2Fmaescode-bot.github.io%2Frandmob%2Fuser_signup" class="text-dark" target="_blank"><i class="fa fa-twitter-square mx-1"></i></a>
 						  
-						<a href="https://www.linkedin.com/shareArticle?mini=true&amp; url=https%3A%2F%2Fmaescode-bot.github.io%2Frandmob%2Fuser_signup; title =I just signed up for car repairs on %20https%3A%2F%2Fmaescode-bot.github.io%2Frandmob%2Fuser_signup; source=https%3A%2F%2Fmaescode-bot.github.io%2Frandmob%2Fuser_signup" class="text-dark" target="_blank"><i class="fa fa-linkedin mx-1"></i></a>
 						  
 						<a href="tg://msg?text=I just signed up for car repairs on  %20https%3A%2F%2Fmaescode-bot.github.io%2Frandmob%2Fuser_signup" id="telegram_share" alt="telegram_share"><i class="fa fa-telegram mx-1 text-dark"></i>
 						</a>
 						  
-						<a href="https://api.whatsapp.com/send?text=I just signed up for car repairs on www.randmob.com" class="text-dark" target="_blank"><i class="fa fa-whatsapp mx-1"></i></a>
+						<a href="https://api.whatsapp.com/send?text=I just signed up for car repairs on www.randmob.com" class="text-dark" target="_blank"><i class="fa fa-whatsapp mx-1"></i>
+						</a>
 						
 					 </div>
 				  </div>
