@@ -58,7 +58,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div id="signup-form" class="pt-3">
-					<form action="#" method="#" enctype="#">
+					<form action="referer.html" method="#" enctype="#">
 					<div class="form-group">
 						<label for="name">Name</label>
 						<input type="text" id="name" placeholder="Enter your Name" class="form-control" required>
@@ -130,6 +130,7 @@
 										<div class="form-group">
 											<label for="tov">Type of vehicle</label>
 											<select class="form-control" id="tov">
+												<option>Select type of Vehicle</option>
 												<option value="Truck">Truck</option>
 												<option value="Bus">Bus</option>
 												<option value="Suv">SUV</option>
@@ -139,6 +140,7 @@
 										<div class="form-group">
 											<label for="tof">Type of Fuel</label>
 											<select class="form-control" id="tof" >
+												<option>Select type of fuel</option>
 												<option value="diesel">Diesel</option>
 												<option value="petrol">Petrol</option>
 											</select>
@@ -202,7 +204,7 @@
 									</div>
 									<div class="form-group">
 										<label for="mobkey">MOBKEY</label>
-										<input type="text" id="mobkey" placeholder="Enter MOBKEY" class="form-control" required>
+										<input type="text" id="mobkey" placeholder="Enter MOBKEY" class="form-control">
 									</div>
 
 							  </div>
@@ -210,7 +212,7 @@
 							  <!-- Modal footer -->
 								<div class="form-group">
 									<!-- Button trigger modal -->
-									<button type="submit" class="form-control btn-success p-2 shadow border-0 tts font-weight-bolder w-50 mx-auto" data-toggle="modal" data-target="#exampleModal" id="">
+									<button type="submit" class="form-control btn-success p-2 shadow border-0 tts font-weight-bolder w-50 mx-auto"sssss>
 									   Register
 									</button>
 								</div>
@@ -234,11 +236,11 @@
 							  <div class="modal-body">
 									<div class="form-group">
 										<label for="mobkey">MOBKEY</label>
-										<input type="text" id="mobkey" placeholder="Enter MOBKEY" class="form-control" required>
+										<input type="text" id="mobkey" placeholder="Enter MOBKEY" class="form-control">
 									</div>
 									<div class="form-group">
 										<label for="mobcode">MOBCODE</label>
-										<input type="text" id="mobcode" placeholder="Enter MOBCODE" class="form-control" required>
+										<input type="text" id="mobcode" placeholder="Enter MOBCODE" class="form-control">
 									</div>
 							  </div>
 
@@ -246,7 +248,7 @@
 							 <!-- Modal footer -->
 								<div class="form-group">
 									<!-- Button trigger modal -->
-									<button type="submit" class="form-control btn-success p-2 shadow border-0 tts font-weight-bolder w-50 mx-auto" data-toggle="modal" data-target="#exampleModal" id="">
+									<button type="submit" class="form-control btn-success p-2 shadow border-0 tts font-weight-bolder w-50 mx-auto">
 									   Register
 									</button>
 								</div>
@@ -260,59 +262,6 @@
 				</div>
 			</div>
 		</div>
-		<!------------------------Referal form starts here----------------->
-			<!-- Modal -->
-			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			  <div class="modal-dialog">
-				<div class="modal-content">
-				  <div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Refer others</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					  <span aria-hidden="true">&times;</span>
-					</button>
-				  </div>
-				  <div class="modal-body">
-					 <form action="#" method="" enctype="#" id="contact-form">
-						 <div class="form-group">
-							 <label for="rname1"><i class="fa fa-user-circle">&nbsp;</i>Name</label>
-							 <input type="text" name="rname1" class="form-control" id="rname1" placeholder="Enter name">
-						 </div>
-						 <div class="form-group">
-							 <label for="rphone1"><i class="fa fa-phone-square">&nbsp;</i>Phone</label>
-							 <input type="text" name="rphone1" class="form-control" id="rphone1" placeholder="Phone number">
-						 </div>
-						 <div class="form-group">
-							 <label for="message"><i class="fa fa-user">&nbsp;</i>User type</label>
-							 <select class="form-control">
-								 <option>Individual</option>
-								  <option>Organization</option>
-							 </select>
-							
-						 </div>
-						 <div class="form-group">
-							 <input type="submit" name="contact-submit" class="form-control" id="submit">
-						 </div>
-					 </form>
-					  <p class="text-center">I just signed up for car repairs on randmob.com</p>
-				  	  <div id="social" class="text-center">
-						<span>Share</span>
-						<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmaescode-bot.github.io%2Frandmob%2Fuser_signup" class="text-dark" target="_blank"><i class="fa fa-facebook-official mx-1"></i></a>
-						  
-						<a href="https://twitter.com/intent/tweet/?text=I just signed up for car repairs on %20https%3A%2F%2Fmaescode-bot.github.io%2Frandmob%2Fuser_signup" class="text-dark" target="_blank"><i class="fa fa-twitter-square mx-1"></i></a>
-						  
-						  
-						<a href="tg://msg?text=I just signed up for car repairs on  %20https%3A%2F%2Fmaescode-bot.github.io%2Frandmob%2Fuser_signup" id="telegram_share" alt="telegram_share"><i class="fa fa-telegram mx-1 text-dark"></i>
-						</a>
-						  
-						<a href="https://api.whatsapp.com/send?text=I just signed up for car repairs on www.randmob.com" class="text-dark" target="_blank"><i class="fa fa-whatsapp mx-1"></i>
-						</a>
-						
-					 </div>
-				  </div>
-				</div>
-			  </div>
-			</div>
-<!------------------------Referer form ends here------------------->
 	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins)--->
     <script src="js/jquery-3.3.1.min.js"></script>

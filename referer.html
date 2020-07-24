@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Randmob | Car Activation</title>
+	<!--Fontawesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap--->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mainstyle.css">
+  </head>
+  <body>
+	  <div id="coming_soon_page_header">
+		  <div class="row">
+			  <div class="col-12">
+				<div class="container p-3">
+					<h1 id="randmob"><img src="images/logo.png" id="logo"><span class="text-success pl-3 pt-1">Randmob</span></h1>
+				</div>
+			  </div>
+		  </div>
+	  </div>	
+	 
+	 <!------------------------Referal form starts here----------------->
+			<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Refer others</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+					 <form action="#" method="" enctype="#" id="contact-form">
+						 <div class="form-group">
+							 <label for="rname1"><i class="fa fa-user-circle">&nbsp;</i>Name</label>
+							 <input type="text" name="rname1" class="form-control" id="rname1" placeholder="Enter name">
+						 </div>
+						 <div class="form-group">
+							 <label for="rphone1"><i class="fa fa-phone-square">&nbsp;</i>Phone</label>
+							 <input type="text" name="rphone1" class="form-control" id="rphone1" placeholder="Phone number">
+						 </div>
+						 <div class="form-group">
+							 <label for="message"><i class="fa fa-user">&nbsp;</i>User type</label>
+							 <select class="form-control">
+								 <option>Individual</option>
+								  <option>Organization</option>
+							 </select>
+							
+						 </div>
+						 <div class="form-group">
+							 <input type="submit" name="contact-submit" class="form-control" id="submit">
+						 </div>
+					 </form>
+					  <p class="text-center">I just signed up for car repairs on randmob.com</p>
+				  	  <div id="social" class="text-center">
+						<span>Share</span>
+						<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmaescode-bot.github.io%2Frandmob%2Fuser_signup" class="text-dark" target="_blank"><i class="fa fa-facebook-official mx-1"></i></a>
+						  
+						<a href="https://twitter.com/intent/tweet/?text=I just signed up for car repairs on %20https%3A%2F%2Fmaescode-bot.github.io%2Frandmob%2Fuser_signup" class="text-dark" target="_blank"><i class="fa fa-twitter-square mx-1"></i></a>
+						  
+						  
+						<a href="tg://msg?text=I just signed up for car repairs on  %20https%3A%2F%2Fmaescode-bot.github.io%2Frandmob%2Fuser_signup" id="telegram_share" alt="telegram_share"><i class="fa fa-telegram mx-1 text-dark"></i>
+						</a>
+						  
+						<a href="https://api.whatsapp.com/send?text=I just signed up for car repairs on www.randmob.com" class="text-dark" target="_blank"><i class="fa fa-whatsapp mx-1"></i>
+						</a>
+						
+					 </div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+<!------------------------Referer form ends here------------------->
+	  
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#myModal").modal('show');
+		});
+	</script>
+<script src="js/repair_costs.js"></script>  
+	  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>
