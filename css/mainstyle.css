@@ -175,6 +175,13 @@ body{
     color: black;
 }
 @media (max-width: 900px) {
+	.reg{
+		display: block !important;
+	}
+	
+	#celebrate{
+		width: 340px !important;
+	}
 	
 	#admin-nav h3{
 	color:#495057 !important;
@@ -250,10 +257,12 @@ body{
 }
 
 .join{
-    border: solid 1px gray;
-    margin: 0px 3px 0px 3px;
-    border: solid 1px white;
+    margin: 10px 3px 0px 3px !important;
     color: white;
+}
+
+.join img{
+	width: 200px;
 }
 
 .fa-circle{
@@ -818,8 +827,29 @@ form label {
 #cns, #css{
 	right: 60% !important;
 }
+
 @font-face{
 	font-family: "DoHyeon";
 	src:url("../font/Do_Hyeon/DoHyeon-Regular.ttf");
 }
+
+@font-face{
+	font-family: "Dancing";
+	src:url("../font/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+@font-face{
+	font-family: "peris";
+	src:url("../font/Parisienne/Parisienne-Regular.ttf");
+}
+#celebration-text{
+	font-size: 1.2em;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+#hurray{
+  font-family: "peris";
+font-size: 2em;
+}
+
 
