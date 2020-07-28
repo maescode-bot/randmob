@@ -594,7 +594,7 @@ form label {
 }
 
 #admin-nav a{
-	color:#495057 !important;
+	color:white;
 }
 
 #admin-nav a:hover{
@@ -849,7 +849,15 @@ form label {
 
 #hurray{
   font-family: "peris";
-font-size: 2em;
+  font-size: 2em;
 }
 
+
+#logout{
+	border:0px;
+	border-radius: 0px;
+	margin-left: 0px;
+	color: white !important;
+	font-weight: bolder;
+}
 
