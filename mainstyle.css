@@ -1,0 +1,871 @@
+
+*{
+	box-sizing: border-box !important;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background:#fff;
+    font-family: 'Raleway', san-serif;
+    color: black;
+    overflow-x: hidden;
+}
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-color:blue;
+    background:url('../images/cover.png'),url('../images/landing.jpg');
+    background-position: top;
+    background-size: cover;
+    /*background-attachment: fixed*/;
+    background-repeat: no-repeat;
+    
+}
+.mynav{
+    background-color: white;
+}
+.banner .navbar {
+   /* margin-top:1%;*/
+}
+
+.banner .navbar-brand{
+    color: black;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-left:.5%;
+}
+
+.banner .nav {
+    margin-right:1%;
+}
+
+.banner .nav li a{
+    color:#aaa;
+    font-size: 1.2em;
+}
+
+ .info{
+     margin-top: 23%;
+     text-transform:(-15px) ;
+ }
+
+ 
+
+ .info h1{
+    font-weight:700 ;
+    font-size: 2.8em;
+    color:#fff;
+    letter-spacing:2px;
+	
+    
+ }
+
+ .info p{
+    font-weight:500 ;
+    font-size:1.8em;
+    color:#fff;
+    
+
+ }
+
+ .info * {
+     
+ }
+
+ #mockup{
+	 margin-top: 10px;
+	 display: flex;
+	 flex-wrap: wrap;
+	 justify-content:center;
+    
+}
+#mockup img {
+	width: 210px;
+}
+
+#mockup img:hover{
+	
+}
+
+#sub-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sub-card {
+    width: 340px;
+    min-height:430px;
+    margin: 30px 20px 30px 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px .1px lightgray;
+
+}
+
+.sub-card-header{
+    height: 120px;
+    
+}
+
+.sub-card-header img{
+    width: 200px;
+}
+
+#subscribe{
+    padding:10px 25px 10px 25px;
+    border-radius: 20px;
+    color: white;
+    
+}
+.subscribe{
+    padding:10px 25px 10px 25px;
+    border-radius: 20px;
+    color: white;   
+}
+
+.subscribe:hover {
+	text-decoration: none !important;
+	color: white !important;
+}
+
+.section-1{
+    background-color: rgb(250, 250, 250);
+}
+
+.footer ul{
+	list-style: none;
+    font-size: 1.1em;
+}
+
+#footer-section {
+	background-color:#FAFAFA;
+}
+#footer-section hr{
+	background-color: black;
+	height: 2px;
+}
+#register-section hr{
+	background-color: black;
+	height: 2px;
+}
+#footer-section p, #footer-section span, #footer-section address{
+	font-size: 1.15em;
+}
+
+#register-section{
+	 background:url('../images/indexbg.png') ;
+	 background-position: center;
+	 background-repeat: no-repeat;
+}
+
+#social{
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+#social a {
+	margin: 5px;
+}
+
+#social a:hover{color:#37B62A !important;}
+
+.footer ul a{
+    color: black;
+}
+@media (max-width: 900px) {
+	
+	.reg{
+		display: block !important;
+	}
+	
+	#celebrate{
+		width: 340px !important;
+	}
+	
+	#admin-nav h3{
+	color:#495057 !important;
+	width: 100% !important;
+	font-size: 1.4em !important;
+}
+	#register-section p{
+		padding-right: 2em!important;
+	}
+	
+	#social {
+	 text-align: center !important;
+	 margin-bottom: 10px;
+}
+	#mockup img {
+	width: 305px;
+	margin: 5px;
+	}
+	#connect {
+		text-align: center;
+	}
+	.sub-card {
+		width: 305px;
+		margin: 30px 5px 30px 5px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+    .footer ul{
+        text-align: center;
+        list-style: none;
+       
+    }
+    .footer h4{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    #address{
+        text-align: center; 
+    }
+
+     .info{
+        margin-top: 55%;
+        text-transform:(-15px);
+    }
+    .info h1{
+        font-weight:700 ;
+        font-size: 2.3em;
+        color:#fff;
+        letter-spacing:1.5px;
+        
+     }
+    
+     .info p{
+        font-weight:500 ;
+        font-size:1.5em;
+        color:#fff;
+     }
+    
+     .mockup-container{
+         padding: 20px 0px 15px 0px !important;
+     }
+     
+}
+
+.navbar img{
+    width: 35px;
+}
+
+.btn{
+    border: solid 1px gray;
+    margin: 0px 10px 0px 10px
+}
+
+.join{
+    margin: 10px 3px 0px 3px !important;
+    color: white;
+}
+
+.join img{
+	width: 200px;
+}
+
+.fa-circle{
+    color: gray;
+}
+
+.fa-stack-3x{
+  font-size: 5em;
+}
+
+
+/*Styling of Sign Up page starts from here*/
+
+.header img {
+	width: 60px;
+}
+.header h1{
+	margin:0px 10px 0px 10px;
+	padding-top: 5px;
+	font-size: 2.6em;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	color: #37B62A;
+}
+
+#signup{
+	width: 70%;
+	margin:auto;
+}
+
+#signup-form{
+	width: 70%;
+	margin:auto;	
+}
+
+#signup h3, #signup p{
+	font-family: Poppins;
+	font-style: normal;
+	color: #212B36;
+
+}
+
+#signup p {
+	font-size: 1.1em;
+}
+
+form input[type='text'],form input[type='password'],form input[type='submit'],form input[type='date'], form select{	
+	height: 50px !important; 
+	background: #FFFFFF;
+	border: 1px solid rgba(151, 151, 151, 0.228431);
+	box-sizing: border-box !important;
+	box-shadow: 0px 1px 2px rgba(17, 48, 75, 0.04) !important;;
+	border-radius: 3px !important;
+	font-size: 1.1em !important;
+	color: #212B36;
+}
+
+form {
+	margin-top: 20px;
+}
+form label {
+	font-weight: bolder;
+	color: #212B36;
+	
+}
+
+#submit{
+	background: #37B62A;
+	border-radius: 3px;
+	color: white;
+}
+
+@media (max-width: 900px) {
+	#signup{
+	width: 90%;
+	margin:auto;
+}
+	#signup-form {
+		width: 90% !important;
+		margin:auto;
+	}
+	
+}
+
+#back{
+	background-color:#37B62A;
+	color: white;
+	margin-bottom: 10px;
+}
+
+#back:hover{
+	text-decoration: none;
+}
+
+.jumbotron{
+	width: 100% !important;
+	border-radius: 0px;
+	margin: 0px !important;
+}
+
+/*Styling of User Dashboard Start here*/
+
+#dashboard-hearder{
+	height: 150px;
+	background-color: #37B62A;
+}
+
+#amount{
+	margin: 5px 20px 5px 20px;
+	font-weight: bolder;
+	font-size: 1.2em;
+	color: #212B36;
+	
+}
+#amount-card{
+	background: #FFFFFF;
+	/* Background / Lighter */
+	border: 1px solid #E5E8EC;
+	box-shadow: 0px 2px 4px rgba(93, 108, 131, 0.08);
+	border-radius: 8px;
+	min-height: 100px;
+	margin: 10px 20px 0px 20px;
+}
+
+#medcards-container{
+	margin: 10px 20px 10px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+}
+.medcard{
+	background: #FFFFFF;
+/* Background / Lighter */
+
+	border: 1px solid #E5E8EC;
+	box-shadow: 0px 2px 4px rgba(93, 108, 131, 0.08);
+	border-radius: 8px;
+	min-height: 100px;
+	width:49%;
+	margin-top: 20px
+}
+.medcard img{
+	width: 30px;
+}
+@media (max-width: 900px) {
+	
+	#amount-card p{
+	text-align: center !important;
+	}
+	
+	body{
+    overflow-x: hidden;
+}	
+	 .hr{
+	  display: none;
+	}
+	.nav_content h3{
+		font-weight: 800;
+	}
+	
+}
+
+.medcard p{
+	font-size: 1.2em !important;
+	color: #515D6B !important;
+}
+.medcard p a:hover{
+	text-decoration: none
+}
+
+.medcard:hover{
+	box-shadow: 0px 0px 10px lightgray;
+}
+
+#amount-card p{
+	margin-top: 25px;
+	color: #212B36;
+}
+
+#money-value{
+	font-size: 2.3em;	
+}
+
+#dashboard-hearder p{
+	font-size: 1.2em;
+	margin-left: 5px;
+}
+
+#dashboard-hearder img {
+	/*width: 100px;*/
+}
+
+/*-----------------------ODB Styling Starts Here-----------------------*/
+
+#odb-header{
+ height: 65px;
+ background-color: #FFFFFF;
+ padding-top: 20px;
+}
+
+#odb-header img{
+	width: 60px;
+}
+
+#odb-profile{
+	background: #FFFFFF;
+	box-shadow: 0px 2px 4px rgba(93, 108, 131, 0.08);
+	border: 1px solid #E5E8EC;
+	border-radius: 4px;
+	height:100px;
+	margin-top: 100px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex
+}
+
+@media (max-width: 900px) {
+	#cardina .dropdown{
+	position: absolute !important;
+	right: 2.5% !important;
+	top:35% !important;
+}
+	
+#cardina #cnc .dropdown-menu{
+		margin-left: -5em;
+	}
+	
+#cardina #csw .dropdown-menu{
+		margin-left: -5em;
+	}
+#cardina #cnw .dropdown-menu{
+		margin-left: -13em;
+	}
+#cardina #css .dropdown-menu{
+		margin-left: -13em;
+	}
+	
+	.nav-pills {
+	width: 120px !important;
+}
+	
+	.nav-pills .nav-link.active {
+   
+	width: 120px !important;
+	
+}
+	.tab-pane h3{
+		text-align: right !important;
+		font-size: 1.3em !important;
+	}
+	#admin-nav h3 {
+		margin-top: 30px !important;
+	}
+	#odb-header h1{
+	margin-left: 10px !important;
+	}
+	#admin-db-header{
+		margin-top: 40px;
+	}
+}
+#db-card-container{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.db-card {
+	background: #FFFFFF;
+	box-shadow: 0px 2px 4px rgba(93, 108, 131, 0.08);
+	border: 1px solid #E5E8EC;
+	border-radius: 4px;
+	height: 200px;
+	width: 48%;
+}
+
+#odb-profile img{
+	width: 50px;
+}
+
+.db-card img{
+	width: 30px;
+}
+
+
+/*************Swipper Styling Starts***************/
+
+.swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+
+    }
+/*************Admin Dashboard Styling***************/
+.nav-item{
+	
+	font-weight: bolder;
+	color:#28A745;
+}
+
+.admin-card{
+	display: flex;
+	margin-top: 30px!important;
+	justify-content: center;
+	min-height: 150px;
+	
+}
+.admin-card div{
+	margin-top: 5px;
+	border-radius: 10px;
+}
+
+.admin-card div a{
+	text-decoration: none;
+	font-size: 1.5em;
+	color:#28A745;
+}
+
+#admin-nav h3{
+	color:#495057 !important;
+	width: 73%;
+	border: .05px solid lightgray;
+}
+
+#admin-nav a{
+	color:white;
+}
+
+#admin-nav a:hover{
+	text-decoration: none;
+}
+
+/*************User Profile  Styling starts***************/
+
+@media (max-width: 900px) {
+	
+}
+
+#user_profile_page_header{
+	min-height: 120px;
+	background-color: #37B62A;
+}
+.profile_section_header{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	min-width:  80px;
+	width: 450px;
+}
+
+.profile_section_content{
+	margin-top: 10px;
+	border: solid 1px lightgray;
+}
+
+#user_profile{
+	background: url("../images/undraw_personal_information_962o 1.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+}
+
+
+/*************Coming soon page  Styling starts***************/
+@media (max-width: 900px) {
+	.tab-pane p{
+		margin-top: 5px !important;
+	}
+	
+	.tab-pane p a{
+	display: block !important;
+   	margin: 7px !important;
+	width: 40%;
+	margin-left: auto !important;
+	
+}
+
+	.cardina_image{
+		display: inline !important;
+		width: 100% !important;
+		padding-left: 0px!important;
+		margin-left:0px !important;
+	}
+	
+	#coming_soon_page_header h1{
+	  padding-left: 20px;
+	}
+	#coming_soon h1{
+		font-size: 2.4em !important;
+	}
+	
+	#coming_soon{
+		margin-top: 0px !important;
+	}
+	#coming_soon_image img{
+		margin-top: 15px;
+		width: 80% !important;
+	}
+	#contact{
+		margin-top: 40px !important;
+	}
+	#signup h2{
+	font-size: 1.4em;
+}
+	.how_it_works img{
+		width: 100% !important;
+	}
+}
+
+#coming_soon_page_header{
+	min-height: 150px;
+}
+#coming_soon h1{
+		text-shadow: 0px 0px 10px gray;
+	}
+
+.db-card a:hover{
+  text-decoration: none	
+}
+
+#contact a{
+		text-decoration: none;
+		color: #37B62A;
+		width: 200px!important;
+	 	font-weight: bolder;
+	 	display: block;
+		margin: 0px auto 0px auto;
+		border-radius: 5px;
+		border:solid 1px lightgray;
+	}
+/****************Covid tracker form styling page starts here*************************/
+#temprature{
+	width: 300px !important;
+	height: 45px !important;
+}
+
+#search-area{
+	background:url("../images/icons8-coronavirus-100.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size:auto;
+	
+}
+/*****************contact form styling*********************************************/
+
+#contact-form input[type='text'], #contact-form input[type='email'],#contact-form textarea{
+	height: 45px !important; 
+	background: #FFFFFF;
+	border: 1px solid rgba(151, 151, 151, 0.228431);
+	box-sizing: border-box !important;
+	box-shadow: 0px 1px 2px rgba(17, 48, 75, 0.04) !important;;
+	border-radius: 0px !important;
+	font-size: 1.1em !important;
+	color: #212B36;
+}
+
+#contact-form textarea{
+	height: 120px !important;
+}
+
+.tts{
+	border-radius: 0px;
+}
+
+#exampleModal{
+	border-radius:0px !important;
+}
+#newuser{
+	color: #212B36;
+	
+}
+
+#newuser a:hover{
+	text-decoration: none !important;
+	text-shadow: 0px 0px 5px lightgray;
+}
+
+.sub-card a:hover{
+	text-decoration: none;
+}
+
+#signup a:hover{
+	text-decoration: none;
+}
+
+#logo{
+	width: 55px;
+}
+
+#randmob {
+	font-size: 2em;
+	font-family:"DoHyeon"; 
+}
+
+
+
+.nav-pills .nav-link.active {
+    background-color: #28A745!important;
+	margin-right: 10px !important;
+	border-radius: 0px;
+	width: 250px;
+	
+}
+
+.nav-link {
+	color:darkslategray;
+	font-weight: bolder;
+}
+
+.nav-link:hover {
+	color: black;
+
+}
+
+.nav-pills {
+	background-color:#EFECEC;
+	width: 250px;
+	
+
+}
+.nav-link{
+	margin-top: 20px;
+}
+
+.tab-pane p a{
+	font-weight: bolder;
+	padding: 15px !important;
+	box-shadow: 0px 0px 5px 0px lightgray;
+}
+.tab-pane p a:hover{
+	text-decoration: none;
+}
+
+#cardina div{
+	position: relative;
+}
+
+#cardina .dropdown button{
+	border-radius: 0px !important;
+	font-size: .8em;
+	font-weight: bolder;
+	color: white;
+	width: 100px;
+	padding: 0px;
+}
+
+#cardina .dropdown{
+	position: absolute;
+	right: 35%;
+	top:45%;
+}
+
+#cse{
+	right: 15% !important;
+}
+
+#cns, #css{
+	right: 60% !important;
+}
+
+@font-face{
+	font-family: "DoHyeon";
+	src:url("../font/Do_Hyeon/DoHyeon-Regular.ttf");
+}
+
+@font-face{
+	font-family: "Dancing";
+	src:url("../font/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+@font-face{
+	font-family: "peris";
+	src:url("../font/Parisienne/Parisienne-Regular.ttf");
+}
+#celebration-text{
+	font-size: 1.2em;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+#hurray{
+  font-family: "peris";
+  font-size: 2em;
+}
+
+
+#logout{
+	border:0px;
+	border-radius: 0px;
+	margin-left: 0px;
+	color: white !important;
+	font-weight: bolder;
+}
+
