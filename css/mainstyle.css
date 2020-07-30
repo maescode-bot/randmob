@@ -175,6 +175,7 @@ body{
     color: black;
 }
 @media (max-width: 900px) {
+	
 	.reg{
 		display: block !important;
 	}
@@ -186,6 +187,7 @@ body{
 	#admin-nav h3{
 	color:#495057 !important;
 	width: 100% !important;
+	font-size: 1.4em !important;
 }
 	#register-section p{
 		padding-right: 2em!important;
@@ -416,7 +418,13 @@ form label {
 	
 	body{
     overflow-x: hidden;
-}
+}	
+	 .hr{
+	  display: none;
+	}
+	.nav_content h3{
+		font-weight: 800;
+	}
 	
 }
 
@@ -640,7 +648,7 @@ form label {
 	.tab-pane p a{
 	display: block !important;
    	margin: 7px !important;
-	width: 70%;
+	width: 40%;
 	margin-left: auto !important;
 	
 }
