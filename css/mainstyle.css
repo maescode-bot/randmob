@@ -484,6 +484,12 @@ form label {
 }
 
 @media (max-width: 900px) {
+	#reg-body{
+	background-image: url("../images/login-bg.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+	
 	#cardina .dropdown{
 	position: absolute !important;
 	right: 2.5% !important;
@@ -869,3 +875,52 @@ form label {
 	font-weight: bolder;
 }
 
+#login_header{
+	margin-top: 150px;
+	display: flex;
+	justify-content: center;
+}
+
+#login_header img{
+	width: 60px;
+}
+
+#login_footer{
+	margin-top: 30vh;
+	display: flex;
+	justify-content: center;
+}
+
+#login_footer img{
+	width: 30px;
+}
+
+#login_footer h1{
+	font-size: 1em;
+}
+
+#log-btns{
+	margin-top: 260px;
+	width: 340px;
+}
+
+#log-btns p{
+	text-align: center;
+	
+}
+#log-btns p a{
+	width: 320px !important;
+	margin: auto;
+}
+
+#reg-body{
+	background-image: url("../images/log-dek.svg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 100vh;
+}
+
+#log-btns form {
+	width: 320px;
+	margin:auto;
+}
